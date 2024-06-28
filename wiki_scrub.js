@@ -1,3 +1,13 @@
+/*
+ * This code is for extracting the tabulated data off the flat earth Wiki page into a CSV file for easier analysis. The steps are:
+ *
+ *   1. Open the Wiki page in a browser: https://wiki.24-7flatearth.org/index.php/Observations
+ *   2. Open the browser's Javascript console.
+ *   3. Copy the file contents from wiki_scrub.js into the console. You may need to dismiss a security check.
+ *   4. It should now prompt you to download a CSV file.
+ *
+ */
+
 let sect = document.getElementById("Visible_Light_Flat_Earth_Observations");
 let heading = sect.closest("h2");
 let table = heading.nextElementSibling;
